@@ -43,6 +43,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
 
+// Force NKRO to be on all the time (https://github.com/qmk/qmk_firmware/issues/1695)
+#define FORCE_NKRO
+
 // Underglow
 /*
 #undef RGBLED_NUM
