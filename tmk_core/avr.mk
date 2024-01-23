@@ -130,8 +130,7 @@ define EXEC_DFU
 		fi; \
 		$(DFU_PROGRAMMER) $(MCU) flash $(BUILD_DIR)/$(TARGET).hex;\
 	fi; \
-	$(DFU_PROGRAMMER) $(MCU) reset; \
-	echo "Done flashing!"
+	$(DFU_PROGRAMMER) $(MCU) reset
 endef
 
 dfu: $(BUILD_DIR)/$(TARGET).hex cpfirmware check-size
